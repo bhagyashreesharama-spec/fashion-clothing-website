@@ -1,1 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>VÉLORA — Modern Fashion</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    Free shipping on orders over ₹1,999
+  </div>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+
+    <div class="nav-inner">
+
+      <button class="menu-btn" id="menuBtn">☰</button>
+
+      <a href="#" class="logo">
+        <span>V</span>ÉLORA
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#new">New In</a>
+        <a href="#shop">Shop</a>
+        <a href="#story">Our Story</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="searchBtn" title="Search">⌕</button>
+        <button id="cartBtn" title="Shopping Bag">
+          ♡
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+
+  <!-- SEARCH -->
+  <div class="search-box" id="searchBox">
+    <div class="search-inner">
+      <input type="text" id="searchInput" placeholder="Search dresses, shirts, accessories...">
+      <button id="closeSearch">×</button>
+    </div>
+  </div>
+
+
+  <!-- HERO -->
+  <main>
+
+    <section class="hero" id="home">
+
+      <div class="hero-content">
+
+        <p class="eyebrow">THE NEW SEASON · 2026</p>
+
+        <h1>
+          Style that
+          <span>speaks</span>
+          for you.
+        </h1>
+
+        <p class="hero-text">
+          Contemporary fashion designed for people who believe
+          confidence is the best thing they can wear.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#shop" class="btn dark-btn">Shop Collection</a>
+          <a href="#story" class="text-btn">Discover VÉLORA →</a>
+        </div>
+
+      </div>
+
+
+      <!-- CSS FASHION VISUAL -->
+      <div class="hero-fashion">
+
+        <div class="fashion-glow"></div>
+
+        <div class="model-head"></div>
+
+        <div class="model-body">
+          <div class="model-neck"></div>
+          <div class="model-shirt"></div>
+          <div class="model-arm left-arm"></div>
+          <div class="model-arm right-arm"></div>
+          <div class="model-skirt"></div>
+        </div>
+
+        <div class="fashion-label">
+          <span>VÉLORA</span>
+          <small>SPRING / SUMMER</small>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- BRAND STRIP -->
+    <section class="brand-strip">
+      <span>TIMELESS</span>
+      <span>MODERN</span>
+      <span>EFFORTLESS</span>
+      <span>CONFIDENT</span>
+      <span>TIMELESS</span>
+    </section>
+
+
+    <!-- CATEGORIES -->
+    <section class="categories section">
+
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">EXPLORE</p>
+          <h2>Shop by category</h2>
+        </div>
+
+        <p>
+          Pieces made to move with your everyday life.
+        </p>
+      </div>
+
+
+      <div class="category-grid">
+
+        <div class="category-card women-card" data-category="women">
+          <div class="category-visual">
+            <div class="mini-dress"></div>
+          </div>
+
+          <div class="category-info">
+            <h3>Women</h3>
+            <span>Explore collection →</span>
+          </div>
+        </div>
+
+
+        <div class="category-card men-card" data-category="men">
+          <div class="category-visual">
+            <div class="mini-shirt"></div>
+          </div>
+
+          <div class="category-info">
+            <h3>Men</h3>
+            <span>Explore collection →</span>
+          </div>
+        </div>
+
+
+        <div class="category-card accessories-card" data-category="accessories">
+          <div class="category-visual">
+            <div class="mini-bag"></div>
+          </div>
+
+          <div class="category-info">
+            <h3>Accessories</h3>
+            <span>Explore collection →</span>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- NEW COLLECTION -->
+    <section class="products-section section" id="new">
+
+      <div class="section-heading">
+
+        <div>
+          <p class="eyebrow">JUST DROPPED</p>
+          <h2>New collection</h2>
+        </div>
+
+        <button class="outline-btn" id="viewAllBtn">
+          View all
+        </button>
+
+      </div>
+
+
+      <div class="filter-row">
+
+        <button class="filter active" data-filter="all">
+          All
+        </button>
+
+        <button class="filter" data-filter="women">
+          Women
+        </button>
+
+        <button class="filter" data-filter="men">
+          Men
+        </button>
+
+        <button class="filter" data-filter="accessories">
+          Accessories
+        </button>
+
+      </div>
+
+
+      <div class="product-grid" id="productGrid">
+
+
+        <!-- PRODUCT 1 -->
+        <article class="product-card" data-category="women">
+
+          <div class="product-image beige-product">
+
+            <span class="product-badge">NEW</span>
+
+            <button class="heart-btn">♡</button>
+
+            <div class="product-visual dress-visual"></div>
+
+            <button
+              class="quick-view"
+              data-product="Sculpted Midi Dress"
+              data-price="2499">
+              Quick View
+            </button>
+
+          </div>
+
+          <div class="product-info">
+            <p class="product-category">WOMEN · DRESSES</p>
+            <h3>Sculpted Midi Dress</h3>
+
+            <div class="product-bottom">
+              <strong>₹2,499</strong>
+
+              <button
+                class="add-btn"
+                data-name="Sculpted Midi Dress"
+                data-price="2499">
+                + Add
+              </button>
+            </div>
+          </div>
+
+        </article>
+
+
+        <!-- PRODUCT 2 -->
+        <article class="product-card" data-category="men">
+
+          <div class="product-image dark-product">
+
+            <span class="product-badge dark-badge">TRENDING</span>
+
+            <button class="heart-btn">♡</button>
+
+            <div class="product-visual shirt-visual"></div>
+
+            <button
+              class="quick-view"
+              data-product="Essential Overshirt"
+              data-price="2199">
+              Quick View
+            </button>
+
+          </div>
+
+          <div class="product-info">
+            <p class="product-category">MEN · SHIRTS</p>
+            <h3>Essential Overshirt</h3>
+
+            <div class="product-bottom">
+              <strong>₹2,199</strong>
+
+              <button
+                class="add-btn"
+                data-name="Essential Overshirt"
+                data-price="2199">
+                + Add
+              </button>
+            </div>
+          </div>
+
+        </article>
+
+
+        <!-- PRODUCT 3 -->
+        <article class="product-card" data-category="women">
+
+          <div class="product-image pink-product">
+
+            <span class="product-badge">LIMITED</span>
+
+            <button class="heart-btn">♡</button>
+
+            <div class="product-visual top-visual"></div>
+
+            <button
+              class="quick-view"
+              data-product="Soft Ribbed Top"
+              data-price="1299">
+              Quick View
+            </button>
+
+          </div>
+
+          <div class="product-info">
+            <p class="product-category">WOMEN · TOPS</p>
+            <h3>Soft Ribbed Top</h3>
+
+            <div class="product-bottom">
+              <strong>₹1,299</strong>
+
+              <button
+                class="add-btn"
+                data-name="Soft Ribbed Top"
+                data-price="1299">
+                + Add
+              </button>
+            </div>
+          </div>
+
+        </article>
+
+
+        <!-- PRODUCT 4 -->
+        <article class="product-card" data-category="accessories">
+
+          <div class="product-image olive-product">
+
+            <span class="product-badge">NEW</span>
+
+            <button class="heart-btn">♡</button>
+
+            <div class="product-visual bag-visual"></div>
+
+            <button
+              class="quick-view"
+              data-product="Structured Mini Bag"
+              data-price="1799">
+              Quick View
+            </button>
+
+          </div>
+
+          <div class="product-info">
+            <p class="product-category">ACCESSORIES · BAGS</p>
+            <h3>Structured Mini Bag</h3>
+
+            <div class="product-bottom">
+              <strong>₹1,799</strong>
+
+              <button
+                class="add-btn"
+                data-name="Structured Mini Bag"
+                data-price="1799">
+                + Add
+              </button>
+            </div>
+          </div>
+
+        </article>
+
+
+        <!-- PRODUCT 5 -->
+        <article class="product-card" data-category="men">
+
+          <div class="product-image blue-product">
+
+            <span class="product-badge">NEW</span>
+
+            <button class="heart-btn">♡</button>
+
+            <div class="product-visual polo-visual"></div>
+
+            <button
+              class="quick-view"
+              data-product="Relaxed Polo"
+              data-price="1599">
+              Quick View
+            </button>
+
+          </div>
+
+          <div class="product-info">
+            <p class="product-category">MEN · POLOS</p>
+            <h3>Relaxed Polo</h3>
+
+            <div class="product-bottom">
+              <strong>₹1,599</strong>
+
+              <button
+                class="add-btn"
+                data-name="Relaxed Polo"
+                data-price="1599">
+                + Add
+              </button>
+            </div>
+          </div>
+
+        </article>
+
+
+        <!-- PRODUCT 6 -->
+        <article class="product-card" data-category="accessories">
+
+          <div class="product-image cream-product">
+
+            <span class="product-badge">BESTSELLER</span>
+
+            <button class="heart-btn">♡</button>
+
+            <div class="product-visual sunglasses-visual"></div>
+
+            <button
+              class="quick-view"
+              data-product="Classic Frame"
+              data-price="999">
+              Quick View
+            </button>
+
+          </div>
+
+          <div class="product-info">
+            <p class="product-category">ACCESSORIES · EYEWEAR</p>
+            <h3>Classic Frame</h3>
+
+            <div class="product-bottom">
+              <strong>₹999</strong>
+
+              <button
+                class="add-btn"
+                data-name="Classic Frame"
+                data-price="999">
+                + Add
+              </button>
+            </div>
+          </div>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- PROMO -->
+    <section class="promo">
+
+      <div class="promo-content">
+
+        <p class="eyebrow">THE VÉLORA EDIT</p>
+
+        <h2>
+          Less noise.
+          <br>
+          More <i>style.</i>
+        </h2>
+
+        <p>
+          Discover carefully designed essentials that
+          stay relevant beyond the season.
+        </p>
+
+        <a href="#shop" class="btn light-btn">
+          Explore the edit
+        </a>
+
+      </div>
+
+      <div class="promo-shape">
+        <div class="floating-bag"></div>
+        <div class="floating-circle"></div>
+      </div>
+
+    </section>
+
+
+    <!-- STORY -->
+    <section class="story section" id="story">
+
+      <div class="story-visual">
+
+        <div class="story-frame">
+          <div class="story-model"></div>
+          <span>VÉLORA / 26</span>
+        </div>
+
+      </div>
+
+
+      <div class="story-content">
+
+        <p class="eyebrow">OUR PHILOSOPHY</p>
+
+        <h2>Fashion should feel like <i>you.</i></h2>
+
+        <p>
+          VÉLORA is a fictional contemporary fashion label built
+          around clean silhouettes, everyday comfort and timeless
+          design.
+        </p>
+
+        <p>
+          We believe great style doesn't need to be complicated.
+          The right pieces simply make you feel more like yourself.
+        </p>
+
+        <a href="#contact" class="text-btn">
+          Learn more about VÉLORA →
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- NEWSLETTER -->
+    <section class="newsletter">
+
+      <div>
+        <p class="eyebrow">STAY IN THE LOOP</p>
+
+        <h2>First access to new drops.</h2>
+
+        <p>
+          Sign up for collection launches, private offers and style notes.
+        </p>
+      </div>
+
+      <form id="newsletterForm">
+
+        <input
+          type="email"
+          id="emailInput"
+          placeholder="Your email address"
+          required>
+
+        <button type="submit">
+          Subscribe →
+        </button>
+
+      </form>
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <section class="contact section" id="contact">
+
+      <div class="contact-heading">
+
+        <p class="eyebrow">CONTACT</p>
+
+        <h2>Let's talk<br><i>fashion.</i></h2>
+
+      </div>
+
+      <div class="contact-details">
+
+        <div>
+          <span>Email</span>
+          <p>hello@velora.demo</p>
+        </div>
+
+        <div>
+          <span>Studio</span>
+          <p>New Delhi · India</p>
+        </div>
+
+        <div>
+          <span>Hours</span>
+          <p>Mon — Sat · 10 AM — 7 PM</p>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <div class="footer-main">
+
+      <div class="footer-brand">
+
+        <a href="#" class="logo footer-logo">
+          <span>V</span>ÉLORA
+        </a>
+
+        <p>
+          Modern essentials for modern lives.
+        </p>
+
+      </div>
+
+
+      <div class="footer-links">
+
+        <div>
+          <h4>Shop</h4>
+          <a href="#new">New In</a>
+          <a href="#shop">Women</a>
+          <a href="#shop">Men</a>
+          <a href="#shop">Accessories</a>
+        </div>
+
+        <div>
+          <h4>Company</h4>
+          <a href="#story">Our Story</a>
+          <a href="#contact">Contact</a>
+          <a href="#">Shipping</a>
+          <a href="#">Returns</a>
+        </div>
+
+        <div>
+          <h4>Social</h4>
+          <a href="#">Instagram</a>
+          <a href="#">Facebook</a>
+          <a href="#">Pinterest</a>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 VÉLORA. Demo website.</span>
+      <span>Designed with code.</span>
+    </div>
+
+  </footer>
+
+
+  <!-- CART DRAWER -->
+  <div class="overlay" id="overlay"></div>
+
+  <aside class="cart-drawer" id="cartDrawer">
+
+    <div class="cart-header">
+
+      <div>
+        <p class="eyebrow">YOUR BAG</p>
+        <h2>Shopping Bag</h2>
+      </div>
+
+      <button id="closeCart">×</button>
+
+    </div>
+
+    <div class="cart-items" id="cartItems">
+
+      <div class="empty-cart">
+        <span>♡</span>
+        <p>Your bag is empty.</p>
+        <small>Add something you love.</small>
+      </div>
+
+    </div>
+
+    <div class="cart-footer">
+
+      <div class="cart-total">
+        <span>Subtotal</span>
+        <strong id="cartTotal">₹0</strong>
+      </div>
+
+      <button class="checkout-btn" id="checkoutBtn">
+        Proceed to checkout
+      </button>
+
+    </div>
+
+  </aside>
+
+
+  <!-- QUICK VIEW MODAL -->
+  <div class="modal" id="quickModal">
+
+    <div class="modal-content">
+
+      <button class="modal-close" id="closeModal">×</button>
+
+      <div class="modal-product-visual">
+        <div id="modalVisual"></div>
+      </div>
+
+      <div class="modal-info">
+
+        <p class="eyebrow">VÉLORA COLLECTION</p>
+
+        <h2 id="modalName">Product</h2>
+
+        <strong id="modalPrice">₹0</strong>
+
+        <p>
+          Designed with a clean silhouette and comfortable
+          everyday fit. A versatile piece for your wardrobe.
+        </p>
+
+        <button id="modalAdd" class="btn dark-btn">
+          Add to bag
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="toast" id="toast">
+    Added to your bag ✓
+  </div>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
